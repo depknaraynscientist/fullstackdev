@@ -14,7 +14,7 @@ Google Cloud Storage (GCS): Data Lake
 BigQuery: Data Warehouse  
 Terraform: Infrastructure-as-Code (IaC)  
 SQL: Data Analysis & Exploration  
-Prefect:  
+Prefect/Airflow
 dbt: Data Transformation  
 Spark: Distributed Processing  
 Kafka: Streaming  
