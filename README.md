@@ -1,4 +1,7 @@
-# Python Projects
+## Home
+
+Training/Certifications attended :
+Full stack development in Python
 
 Bootcamps worked on :  
 
