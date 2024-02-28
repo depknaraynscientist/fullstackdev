@@ -1,0 +1,23 @@
+.base{
+	position : relative;
+	z-index : -1;
+}
+.layer_1{
+	position : absolute;
+	z-index : 1;
+}
+.backgroundcolor-blue{
+	background-color: #050a4c;
+
+}
+.logo-dimensions{
+	width: 547;
+	height: 189;
+}
+span{
+	padding: 0px 10px 0px 10px;
+}
+.imageScope{
+	max-height: 35px;
+	max-width: 35px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Software, Networking, Testing and Cloud courses</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style1.css" rel="stylesheet">
+</head>
+<body>
+    <!-- outermost container giving it as fluid and 0 padding (bcos I see it with padding)-->
+    <div class="container-fluid p-0">
+        <div class="container-fluid p-0">
+            <!-- navigation bar -->
+            <nav class="navbar navbar-default backgroundcolor-blue">
+                <!-- we need a container inside which we will mention the ul and li items. -->
+                <!-- I give row along with it so that I can mention col-4 inside -->
+                <div class="container">
+                <!-- Using navbar-brand is pushing the navbar items to the right -->
+                <!-- <a class="navbar-brand text-white" href="#">Scope</a> -->
+                <!-- using flex-row means the lis will arrange horizontally without us explicitly giving horizontal alignment via css. -->
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                <!-- giving padding of each span as 0px ht and 10px width -->
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                <span>Courses</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class= "nav-link text-white" href="#">
+                                <span>Placement Cell</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav flex-row col-4 justify-content-center">
+                        <a class= "nav-link text-white" href="#">
+                            <img src="images/scope-india-logo-bird.png" alt = "SCOPE INDIA" class="imageScope">
+                        </a>
+                    </ul>            
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item">
+                            <a class= "nav-link text-white" href="#">
+                                <span>Know SCOPE INDIA</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class= "nav-link text-white" href="#">
+                                <span>Contact Us</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class= "nav-link text-white" href="#">
+                                <span>Register Now</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- first div image + logo : 'row'is causing width issues, so gave container-fluid along with it. -->
+        <div class="container-fluid row m-0 p-0">
+            <!-- giving col-* inside the row will remove the horizontal scrollbar -->
+            <img src="images/slider_bg.jpg" alt="backgroundimage" class="base col-12 mx-0 p-0">
+            <!-- give an outer div for the image AND give this outer div with text-center (this will ensure elements inside will be centered) -->
+            <!-- check about align-middle -->
+            <div class="layer_1 text-center py-100">
+                <img src="images/scope-india-logo-home-page.png" alt="logo" class="col-4">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
