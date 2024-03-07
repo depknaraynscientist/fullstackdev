@@ -21,3 +21,9 @@ span{
 	max-height: 35px;
 	max-width: 35px;
 }
+.deepbluefont{
+	color: #000c81;
+}
+.light_background{
+	background-image: url("images/si-call-back-bg.jpg");
+}

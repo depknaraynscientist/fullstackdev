@@ -1,0 +1,14 @@
+container
+ row (style)
+  col
+   img
+  col
+   h2
+   p
+   div
+    ul
+     li
+     li form group (3 elements)
+	 
+	 
+for grid, if we cant center a div, try 3 divs with col width. Then give justify-content-center and text-center

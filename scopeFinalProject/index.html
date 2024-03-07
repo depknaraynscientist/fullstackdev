@@ -10,68 +10,153 @@
 <body>
     <!-- outermost container giving it as fluid and 0 padding (bcos I see it with padding)-->
     <div class="container-fluid p-0">
-        <div class="container-fluid p-0">
-            <!-- navigation bar -->
-            <nav class="navbar navbar-default backgroundcolor-blue">
-                <!-- we need a container inside which we will mention the ul and li items. -->
-                <!-- I give row along with it so that I can mention col-4 inside -->
-                <div class="container">
-                <!-- Using navbar-brand is pushing the navbar items to the right -->
-                <!-- <a class="navbar-brand text-white" href="#">Scope</a> -->
-                <!-- using flex-row means the lis will arrange horizontally without us explicitly giving horizontal alignment via css. -->
-                    <ul class="navbar-nav flex-row">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">
-                                <!-- giving padding of each span as 0px ht and 10px width -->
-                                <span>Home</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">
-                                <span>Courses</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
+        <section>
+            <div>
+                <!-- navigation bar -->
+                <nav class="navbar navbar-default backgroundcolor-blue">
+                    <!-- we need a container inside which we will mention the ul and li items. -->
+                    <!-- I give row along with it so that I can mention col-4 inside -->
+                    <div class="container">
+                    <!-- Using navbar-brand is pushing the navbar items to the right -->
+                    <!-- <a class="navbar-brand text-white" href="#">Scope</a> -->
+                    <!-- using flex-row means the lis will arrange horizontally without us explicitly giving horizontal alignment via css. -->
+                        <ul class="navbar-nav flex-row">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">
+                                    <!-- giving padding of each span as 0px ht and 10px width -->
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">
+                                    <span>Courses</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class= "nav-link text-white" href="#">
+                                    <span>Placement Cell</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav flex-row col-4 justify-content-center">
                             <a class= "nav-link text-white" href="#">
-                                <span>Placement Cell</span>
+                                <img src="images/scope-india-logo-bird.png" alt = "SCOPE INDIA" class="imageScope">
                             </a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav flex-row col-4 justify-content-center">
-                        <a class= "nav-link text-white" href="#">
-                            <img src="images/scope-india-logo-bird.png" alt = "SCOPE INDIA" class="imageScope">
-                        </a>
-                    </ul>            
-                    <ul class="navbar-nav flex-row">
-                        <li class="nav-item">
-                            <a class= "nav-link text-white" href="#">
-                                <span>Know SCOPE INDIA</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class= "nav-link text-white" href="#">
-                                <span>Contact Us</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class= "nav-link text-white" href="#">
-                                <span>Register Now</span>
-                            </a>
-                        </li>
-                    </ul>
+                        </ul>            
+                        <ul class="navbar-nav flex-row">
+                            <li class="nav-item">
+                                <a class= "nav-link text-white" href="#">
+                                    <span>Know SCOPE INDIA</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class= "nav-link text-white" href="#">
+                                    <span>Contact Us</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class= "nav-link text-white" href="#">
+                                    <span>Register Now</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div> 
+            <!-- first div image + logo : 'row'is causing width issues, so either give container-fluid or m-0 p-0 along with it. -->
+            <div class="row m-0">
+                <!-- giving col-* inside the row will remove the horizontal scrollbar -->
+                <img src="images/slider_bg.jpg" alt="backgroundimage" class="base col-12 mx-0 p-0">
+                <!-- give an outer div for the image AND give this outer div with text-center (this will ensure elements inside will be centered) -->
+                <!-- wierd observations :
+                    top-50 works for vertical but align-middle does not
+                    text-center works for horizontal but start-50 does not(background div gets extended widely) 
+                -->
+                <div class="layer_1 text-center top-50">
+                    <img src="images/scope-india-logo-home-page.png" alt="logo" class="col-4">
                 </div>
-            </nav>
-        </div>
-        <!-- first div image + logo : 'row'is causing width issues, so gave container-fluid along with it. -->
-        <div class="container-fluid row m-0 p-0">
-            <!-- giving col-* inside the row will remove the horizontal scrollbar -->
-            <img src="images/slider_bg.jpg" alt="backgroundimage" class="base col-12 mx-0 p-0">
-            <!-- give an outer div for the image AND give this outer div with text-center (this will ensure elements inside will be centered) -->
-            <!-- check about align-middle -->
-            <div class="layer_1 text-center py-100">
-                <img src="images/scope-india-logo-home-page.png" alt="logo" class="col-4">
+            </div>   
+        </section>
+        <section>
+            <!-- <img src="images/snowpark-home-slider-background.jpg" class="zindex-fixed col-12 p-0"> -->
+            <!-- data-bs-ride="carousel" means that it starts animating from page load -->
+            <div id="carousel_1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- no buttons or arrows required in this website-->
+                    <!-- Atleast 1 carousel-item should be given as áctive, else carousel will not show. -->
+                    <!-- data-interval="5000" means slide changes after 5 seconds. -->
+                    <div class="carousel-item active" data-interval="5000">
+                        <img src="images/scope-india-mean-mern-stack-course.jpg" alt="Mern Full stack course" class="d-block w-50">
+                    </div>
+                    <div class="carousel-item" data-interval="4000">
+                        <img src="images/scope-india-digital-marketing-course.jpg" alt="Digital marketing course" class="d-block w-50">
+                    </div>
+                    <div class="carousel-item" data-interval="4000">
+                        <img src="images/scope-india-network-server-administration-course.jpg" alt="Network Server Admin course" class="d-block w-50">
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        <section>
+            <div class="m-0">
+                <div class="">
+                    <div class="">
+                        <!-- img-fluid is helpful to have theimage width same as that of parent div/container -->
+                        <img class="img-fluid" src="images/snowpark-home-slider-bottom-gradient.png" alt="slider gradient image">
+                    </div>
+                    <div class="">
+                        <img class = "img-fluid" src="images/snowpark-home-slide-decoration-bottomm.png" alt="slider image">    
+                    </div>    
+                </div>
+                <div class="row ">
+                    <div class= "light_background col-8 justify-content-center">
+                        <div class="col p-50 m-50">
+                            <img  src="images/scope-india-lets-discuss-your-career.jpg" alt="lets discuss">
+                        </div>
+                        <div>
+                            <form class="col">
+                                <h2 class="h2 deepbluefont">SCOPE INDIA <br> is open 365 days a year.</h2>
+                                <p>We are open 7 days 24 hrs to talk to you and listen to your queries.</p>
+                            </form>    
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- This is a good way to understand grid -->
+            <div class="row">
+                <div class="col-2 col-lg-2"></div>
+                <!-- Very important : I give justify-content-center(unsure if this does anything for me.) and text-center -->
+                <div class="col-8 col-lg-9 justify-content-center text-center">
+                    <div class="row">
+                        <div class="col-4 "></div>
+                        <div class="col-4 ">
+                            <img class="img-fluid" src="images/5star.png" alt="5 stars">
+                        </div>
+                        <div class="col-4"></div>    
+                    </div>
+                    <p>Google 4.9 * Rated Institute</p>
+                    <h1 class="h1">SCOPE INDIA, your career partner!</h1>
+                    <h2 class="h2">One of the best Training Destination for Software, Networking and Cloud Computing courses in India with 17 years of Industrial experience.</h2>
+                    <p class="text-start">Software, Networking, and Cloud Professional Education Centre in Kerala from Suffix E Solutions with WORKING PROFESSIONALS
+                        oriented on-the-job TRAINING model. SCOPE INDIA provides courses for <strong>Software Programming</strong>
+                        in Python (Data Science | Artificial Intelligence | Machine Learning | Deep Learning, Data Analytics), Java, PHP, .Net,
+                        <strong>Software Testing</strong> Manual and Automation, <strong>Cloud Computing</strong> (AWS | Azure), <strong>Server Administration</strong>
+                        (MCSE | RHCE), <strong>Networking</strong> (CCNA), <strong>Mobile App Development</strong> in Flutter, and <strong>Digital Marketing</strong>.
+                        Training with 100% Trusted Job Based Internship Model. SCOPE INDIA has a Strong Placement Cell that provides jobs to thousands of students every year.
+                        We assure you, you won't regret it after training from SCOPE INDIA!
+                    </p>
+                    <p class="text-start">This is how SCOPE INDIA can support both newbies and experienced in the industry to upgrade their skills.
+                    </p>
+                </div>
+                <div class="col-2 col-lg-1"></div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
+
+
+
+
