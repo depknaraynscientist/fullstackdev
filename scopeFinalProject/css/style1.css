@@ -27,3 +27,21 @@ span{
 .light_background{
 	background-image: url("images/si-call-back-bg.jpg");
 }
+@font-face{
+	font-family: viga_downloaded;
+	src: url(../fonts/Viga-Regular.ttf);
+}
+footer{
+	background-color: #021b5b;
+}
+.skybluetext{
+	color: #0095eb;
+}
+h4,h5,h6{
+	font-family: "viga_downloaded", Arial, Tahoma, sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+.shift-up{
+	margin-top: -50px;
+}

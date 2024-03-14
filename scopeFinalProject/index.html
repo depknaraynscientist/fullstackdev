@@ -8,6 +8,7 @@
     <link href="css/style1.css" rel="stylesheet">
 </head>
 <body>
+    <!-- <header>This is text</header> -->
     <!-- outermost container giving it as fluid and 0 padding (bcos I see it with padding)-->
     <div class="container-fluid p-0">
         <section>
@@ -149,11 +150,96 @@
                     </p>
                     <p class="text-start">This is how SCOPE INDIA can support both newbies and experienced in the industry to upgrade their skills.
                     </p>
+                    <!-- we can use buttons or a href tags to have the bootstrap buttons.  -->
+                    <div class="row">
+                        <button type="button" class="btn btn-primary btn-block h-150">Recent Placements</button>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <button type="button" class="btn btn-warning btn-block">Courses</button>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <button type="button" class="btn btn-success btn-block">Register Now!</button>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <button type="button" class="btn btn-success btn-block">Chat on WhatsApp</button>
+                    </div>
+                    <br>
+                    <!-- Important : We always split 12 columns inside the parent div, not within the main container. -->
+                    <!-- To do : set background color as #f6f6f6 -->
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="images/snowpark-home-icon1.png" alt="icon1">
+                            <h4 class="display-4">Training</h4>
+                        </div>
+                        <div class="col-3">
+                            <img src="images/snowpark-home-icon2.png" alt="icon1">
+                            <h4 class="display-4">Internship</h4>
+                        </div>
+                        <div class="col-3">
+                            <!-- set max height and width for this icon since it is larger. -->
+                            <img class="mh-64 mw-64" src="images/snowpark-home-icon3.png" alt="icon1">
+                            <h4 class="display-4">Grooming</h4>
+                        </div>
+                        <div class="col-3">
+                            <img src="images/snowpark-home-icon4.png" alt="icon1">
+                            <h4 class="display-4">Placement</h4>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-2 col-lg-1"></div>
             </div>
         </section>
     </div>
+    <footer>
+        <div class="row"><br><br><br><br></div>
+        <div class="row">
+                <div class="col-2"></div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="skybluetext"><b>1000+</b></h4>
+                            <h5 class="text-light">STUDENTS ARE <br>TRAINED EVERY YEAR</h5>
+                        </div>
+                        <div class="col shift-up">
+                            <h4 class="skybluetext"><b>30+</b></h4>
+                            <h5 class="text-light">COMPUTER COURSES</h5>
+                        </div>
+                        <div class="col">
+                            <h4 class="skybluetext"><b>95%</b></h4>
+                            <h5 class="text-light">STUDENTS ARE GETTING <br>PLACED EVERY YEAR</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col text-light text-center">
+                <div>
+                    <img src="images/snowpark-footer-logo.png" alt="Scope footer logo">
+                </div>
+                <div>Center for Software, Networking, & Cloud Education</div>
+                <div>Kerala: Technopark TVM | Thampanoor TVM | Kaloor Kochi, Tamil Nadu: Distillery Road | Palace Road Nagercoil</div>
+                <div class="row">
+                    <div class="col-4"></div>
+                    <!-- for max-width always give it for the parent of the image. Then give image with img-fluid. -->
+                    <div class="col-4">
+                        <img class="img-fluid" src="images/iso_iaflogo.png" alt="ISO images">
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+                <div>
+                    <p>An ISO 9001:2015 Certified Company</p>
+                </div>    
+            </div>
+            <div class="col-2"></div>
+
+        </div>
+    </footer>
 </body>
 </html>
 
