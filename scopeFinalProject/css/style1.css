@@ -33,6 +33,7 @@ span{
 }
 footer{
 	background-color: #021b5b;
+	color: #bbc2d5;
 }
 .skybluetext{
 	color: #0095eb;
@@ -44,4 +45,8 @@ h4,h5,h6{
 }
 .shift-up{
 	margin-top: -50px;
+}
+.footer-atags{
+	color: white;
+	text-decoration: none;
 }
